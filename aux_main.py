@@ -277,4 +277,23 @@ def geometric_skewness(vertices, center):
     return variance
 
 
+<<<<<<< HEAD
+def find_farthest_points(points):
+    """Find the two points in the set that are farthest apart."""
+    max_distance = 0
+    farthest_points = None
+    for i, point1 in enumerate(points):
+        for point2 in points[i+1:]:
+            distance = np.linalg.norm(point1 - point2)
+            if distance > max_distance:
+                max_distance = distance
+                farthest_points = (point1, point2)
+    return farthest_points
+
+def perpendicular_distance(point, line):
+    """Calculate the perpendicular distance from a point to a line."""
+    point1, point2 = line
+    return np.abs(np.cross(point2-point1, point1-point))/np.linalg.norm(point2-point1)
+=======
+>>>>>>> 9549e9a7b15bea77b123a214908df760941c5cf2
 
