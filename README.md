@@ -1,10 +1,8 @@
 
-
-```markdown
 # Overview
 
 This manual guides you through the usage of a Python script designed for analyzing the morphology of pericyte meshes. The script quantifies circularity, sphericity, maximum width, minimum width, and average width of 3D-rendered pericyte meshes from STL files. It utilizes PCA for dimension reduction, Convex Hull analysis for shape description, and custom algorithms for width measurement and shape characterization.
-```
+
 ## Requirements
 
 - Python 3.x
