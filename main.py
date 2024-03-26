@@ -52,7 +52,7 @@ if __name__ == "__main__":
         area = hull.volume  # In 2D, hull.volume gives the area
         ##This line retrieves the perimeter (the total length of the edges that form the convex hull) using hull.area. It's worth noting that in the context of the convex hull object, hull.area refers to the perimeter in 2D spaces.
         perimeter = hull.area
-        # Calculate the circularity of the convex hull, a dimensionless metric to assess the shape's similarity to a perfect circle. Circularity is defined as (4 * np.pi * area) / (perimeter ** 2). For a perfect circle, circularity equals 1. Values less than 1 indicate shapes that deviate from circular, with smaller values suggesting more elongated or irregular shapes. This metric is useful in shape analysis,to understand the geometric properties of the dataset or the object it represents.
+        # Calculate  the circularity of the convex hull, a dimensionless metric to assess the shape's similarity to a perfect circle. Circularity is defined as (4 * np.pi * area) / (perimeter ** 2). For a perfect circle, circularity equals 1. Values less than 1 indicate shapes that deviate from circular, with smaller values suggesting more elongated or irregular shapes. This metric is useful in shape analysis,to understand the geometric properties of the dataset or the object it represents.
         circularity = (4 * np.pi * area) / (perimeter ** 2)
         #Step 3: Further Postprocessing 
         ##  The farthest points on this hull are found to determine the shape's longest dimension. 

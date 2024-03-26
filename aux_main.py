@@ -13,7 +13,7 @@ from sklearn.decomposition import PCA
 
 def find_farthest_points(points):
     """
-    Find the two points in the set that are farthest apart.
+    Find the  two points in the set that are farthest apart.
 
     This function iterates over all pairs of points in the given set, calculates the Euclidean distance between each pair,
     and identifies the pair with the maximum distance. This approach ensures that the two points defining the greatest
